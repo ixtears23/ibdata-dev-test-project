@@ -10,9 +10,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @EnableWebMvc
 @ComponentScan(basePackages = { "ibdata.com.tdd" })
 public class DispatcherConfig implements WebMvcConfigurer {
-
+	
+	
 	@Override
 	public void configureViewResolvers(ViewResolverRegistry registry) {
-		registry.jsp("/view/jsp/", ".jsp");
+		registry.jsp("/WEB-INF/views/jsp/", ".jsp");
 	}
 }
