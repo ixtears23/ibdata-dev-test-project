@@ -9,7 +9,7 @@
     <Logger name="ibdata.com.tdd" level="debug">
       <AppenderRef ref="Console"/>
     </Logger>
-    <Logger name="org.springframework" level="debug">
+    <Logger name="org.springframework" level="warn">
       <AppenderRef ref="Console"/>
     </Logger>
     <Root level="error">

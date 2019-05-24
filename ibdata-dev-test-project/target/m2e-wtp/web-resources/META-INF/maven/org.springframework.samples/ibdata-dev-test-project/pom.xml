@@ -10,6 +10,7 @@
 		<spring-framework.version>5.1.7.RELEASE</spring-framework.version>
 		<log4j-slf4j.version>2.11.2</log4j-slf4j.version>
 		<slf4j.version>1.7.5</slf4j.version>
+		<junit.version>4.12</junit.version>
 	</properties>
 	
 	<dependencies>
@@ -38,6 +39,14 @@
 			<version>${spring-framework.version}</version>
 			<scope>test</scope>
 		</dependency>
+				
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		
 	</dependencies>	
 	<build>
 		<pluginManagement>
