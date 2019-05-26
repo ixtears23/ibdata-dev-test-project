@@ -16,4 +16,10 @@ public class HomeController {
 		logger.debug("Home Controller 진입");
 		return home;
 	}
+	
+	@GetMapping(value = "/{login}.do")
+	public String login(@PathVariable String login) {
+		return login;
+	}
+	
 }

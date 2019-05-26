@@ -42,5 +42,15 @@ public class HomeControllerTest {
 			.andExpect(status().isOk())
 			.andReturn();
 		
-	} 
+	}
+	
+	@Test
+	public void shouldLoginUrlRequestIsOkAndViewNameIsLogin() throws Exception {
+		
+		mockMvc.perform(get("/{login}.do", "login"))
+				.andDo(print())
+			.andExpect(status().isOk())
+			.andExpect(view().name("login"));
+	}
+	
 }
