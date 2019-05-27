@@ -22,7 +22,6 @@ public class AuthenticateServiceTest {
 	@Test(expected=AuthenticateException.class)
 	public void exceptionIsThrownIfTheIdOrPwIsNull() {
 		
-		
 		authUser.setId(null);
 		authUser.setPassword(null);
 		
@@ -44,7 +43,6 @@ public class AuthenticateServiceTest {
 		String id = service.selectId();
 
 		assertThat("junseok", is(id));
-		
 	}
 	
 	
